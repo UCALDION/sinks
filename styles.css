@@ -141,11 +141,17 @@ footer {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        padding: 10px 0;
     }
-
+    .nav-left, .nav-right {
+        flex-direction: column;
+        gap: 10px;
+        float: left;
+    }
     .nav-left a, .nav-right a {
         font-size: 1em;
+        display: inline;
     }
 
     .site-title {
@@ -165,8 +171,8 @@ footer {
     }
 
     .sink-item {
-        flex: 1 1 100%; /* Full width on smaller screens */
-        margin: 10px 0; /* Adjust margin */
+        flex: 1 1 100%; 
+        margin: 10px 0; 
     }
 }
 

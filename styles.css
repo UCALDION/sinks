@@ -18,6 +18,7 @@ header {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     font-size: 130%;
+    
 }
 
 .nav-left, .nav-right {
@@ -63,15 +64,15 @@ header {
     position: relative;
 }
 
-.sink2 {
-    background-image: url('images/sink2.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .sink2 {
+        background-image: url('images/sink2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 #About, #Contact {
     border-radius: 50px;
@@ -117,7 +118,6 @@ h2, h3, h4 {
 .sink-item {
     flex: 1 1 30%; 
     margin: 10px;
-    text-align: center;
 }
 
 .sink-item img {
@@ -141,25 +141,31 @@ footer {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
+
     }
     .nav-left, .nav-right {
-        flex-direction: column;
-        gap: 10px;
-        float: left;
+        flex-direction: column; 
+        gap: 9px;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        
     }
     .nav-left a, .nav-right a {
-        font-size: 1em;
-        display: inline;
+        margin-right: 10px;
+
     }
 
     .site-title {
         font-size: 2em;
+        margin-bottom: 10px;
+
     }
 
     #quote, h2, #Description, #TSD, #FB {
         font-size: 1.5em;
+        margin-bottom: 10px;
+
     }
 
     .sink1 {
@@ -179,6 +185,10 @@ footer {
 @media (max-width: 480px) {
     .site-title {
         font-size: 1.5em;
+    }
+    
+    .nav-left, .nav-right {
+        margin-top: 20%;
     }
 
     #quote, h2, #Description, #TSD, #FB {
